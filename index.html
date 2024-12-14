@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My Movie Database</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>My Favourite Movies to Watch</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h2>Titles</h2>
+                    <ul id="moveList">
+                        <li><input type="checkbox"> The Matrix, 1999, Keanu Reeves, Laurence Fishburne</li>
+                        <li><input type="checkbox"> Indiana Jones, 1989, Harrison Ford, Sean Connery</li>
+                        <li><input type="checkbox"> Casino Royale, 2006, Daniel Craig, Eva Green</li>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                    </ul>
+                    <button onclick="deleteSelected()"i class="fa-solid fa-trash">Delete Selected</button>
+                </div>
+                <div class="column">
+                    <h2>Add Movie</h2>
+                    Title: <input type="text" id="inputTitle"> <br>
+                    Year: <input type="text" id="inputYears"> <br>
+                    Actors: <input type="text" id="inputActors"><br>
+                    <button onclick="addMovie()"i class="fa-solid fa-plus" >Add</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <hr>
+            &copy; My Movie Database. All rights reserved
+        </div>
+    </footer>
+
+</body>
+
+</html>
